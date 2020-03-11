@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="/new_post/" method="post">
+    {% csrf_token %}
+    Title: <input type="text" name="title">
+    Content: <textarea name="content" id="" cols="30" rows="10"></textarea>
+    <button type="submit">publish</button>
+</form>
+</body>
+</html>

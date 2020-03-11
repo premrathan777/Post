@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<a href="form/">click here to post</a>
+{% for post in posts %}
+<p>Title: {{post.title}}</p>
+<p>Content: {{post.content}}</p>
+<p>Published on: {{post.published_on}}</p><br><br>
+{% endfor %}
+</body>
+</html>
